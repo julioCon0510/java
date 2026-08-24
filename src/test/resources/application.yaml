@@ -1,0 +1,17 @@
+# Configuracion usada SOLO al ejecutar tests.
+# Sobreescribe la de src/main/resources para no depender de MySQL/Docker.
+spring:
+  datasource:
+    # Base de datos en memoria: se crea al iniciar y se borra al terminar.
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=MySQL
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  liquibase:
+    # Se reutiliza el mismo changelog que produccion (es agnostico de BD),
+    # asi el esquema de los tests es identico al real.
+    change-log: classpath:db/changelog/db.changelog-master.yaml

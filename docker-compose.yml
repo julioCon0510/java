@@ -33,10 +33,20 @@ services:
       DB_NAME: app_db
       DB_USER: app_user
       DB_PASSWORD: app_password
+      # Habilita el debug remoto (JDWP) en el puerto 5005.
+      JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
     ports:
       - "8080:8080"
+      - "5005:5005"
     networks:
       - app-net
+    develop:
+      watch:
+        # Al cambiar codigo fuente o el pom, reconstruye la imagen de la app.
+        - action: rebuild
+          path: ./src
+        - action: rebuild
+          path: ./pom.xml
 
   adminer:
     image: adminer
