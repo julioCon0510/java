@@ -13,25 +13,26 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 
 /**
- * Entidad JPA mapeada a la tabla `producto` (creada por Liquibase).
+ * JPA entity mapped to the `producto` table (created by Liquibase).
+ * Column names are kept in Spanish to match the existing database schema.
  */
 @Entity
 @Table(name = "producto")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProductoEntity {
+public class ProductEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "nombre", nullable = false, length = 150)
-    private String nombre;
+    private String name;
 
     @Column(name = "precio", nullable = false, precision = 12, scale = 2)
-    private BigDecimal precio;
+    private BigDecimal price;
 
     @Column(name = "cantidad_stock", nullable = false)
-    private Integer cantidadStock;
+    private Integer stockQuantity;
 }

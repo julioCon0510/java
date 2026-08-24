@@ -1,6 +1,5 @@
 /**
- * Puertos de entrada (input ports): interfaces de casos de uso que la aplicación expone
- * hacia el exterior. Los adaptadores de entrada (ej. controladores REST) dependen de estas
- * interfaces, nunca al revés.
+ * Input ports: use-case interfaces the application exposes to the outside. Input adapters
+ * (e.g. REST controllers) depend on these interfaces, never the other way around.
  */
 package com.practicas.app.domain.port.in;

@@ -1,5 +1,5 @@
 /**
- * Adaptadores de salida de persistencia: entidades JPA, repositorios Spring Data y las
- * implementaciones de los puertos de salida que traducen entre el dominio y la base de datos.
+ * Persistence output adapters: JPA entities, Spring Data repositories and the output-port
+ * implementations that translate between the domain and the database.
  */
 package com.practicas.app.infrastructure.out.persistence;

@@ -1,5 +1,5 @@
 /**
- * Adaptadores de entrada web: controladores REST que reciben peticiones HTTP y las traducen
- * a llamadas sobre los puertos de entrada (casos de uso) del dominio/aplicación.
+ * Web input adapters: REST controllers that receive HTTP requests and translate them
+ * into calls on the domain/application input ports (use cases).
  */
 package com.practicas.app.infrastructure.in.web;

@@ -7,15 +7,15 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 
 /**
- * Entidad de dominio: representa un producto del catálogo.
+ * Domain entity: represents a product in the catalog.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Producto {
+public class Product {
 
     private Long id;
-    private String nombre;
-    private BigDecimal precio;
-    private Integer cantidadStock;
+    private String name;
+    private BigDecimal price;
+    private Integer stockQuantity;
 }

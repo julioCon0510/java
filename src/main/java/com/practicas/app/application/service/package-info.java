@@ -1,5 +1,5 @@
 /**
- * Servicios de aplicación: implementan los puertos de entrada (casos de uso) orquestando
- * el dominio y los puertos de salida. Aquí vive la lógica de aplicación, no la de negocio pura.
+ * Application services: implement the input ports (use cases) by orchestrating the domain
+ * and the output ports. Application logic lives here, not pure business logic.
  */
 package com.practicas.app.application.service;

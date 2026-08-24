@@ -1,6 +1,5 @@
 /**
- * Puertos de salida (output ports): interfaces que el dominio/aplicación necesita para
- * comunicarse con el exterior (persistencia, mensajería, servicios externos, etc.).
- * Los adaptadores de salida implementan estas interfaces.
+ * Output ports: interfaces the domain/application needs to talk to the outside
+ * (persistence, messaging, external services, etc.). Output adapters implement them.
  */
 package com.practicas.app.domain.port.out;
